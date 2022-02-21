@@ -13,7 +13,7 @@ samples of data and then predicts its performance on larger datasets and cluster
 sizes. To minimize the time and resources spent in building a model, Ernest
 uses [optimal experiment design](https://en.wikipedia.org/wiki/Optimal_design),
 a statistical technique that allows us to collect as few training points as
-required. For more details please see our [paper]
+required. For more details see [paper]
 (http://shivaram.org/publications/ernest-nsdi.pdf) and [talk slides](http://shivaram.org/talks/ernest-nsdi-2016.pdf) from NSDI 2016.
 
 ### Installing Ernest
@@ -55,5 +55,3 @@ iterative in nature and have predictable structure in terms of computation and c
 Thus we are able to run a few iterations of the job on small samples of data to build a performance
 model. However this assumption may not be valid for all workloads.
 
-Further, to compare across instance types, we currently need to build a separate model for each instance
-type. We are working on developing new techniques to share performance models across instance types.
